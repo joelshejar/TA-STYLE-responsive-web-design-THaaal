@@ -1,0 +1,222 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    --primary:rgb(34,41,70);
+    --secondary:rgb(69,182,104);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+}
+a{
+    text-decoration: none;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-start{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgb(227, 231, 245);
+}
+.col{
+    flex: 0 1 48%;
+}
+.col-30{
+    flex: 0 1 30%;
+}
+.header{
+    padding: 1rem 3rem;
+    background-color: var(--primary);
+}
+.blog{
+    margin-left: 1.5rem;
+}
+.about{
+    margin-left: 1.5rem;
+}
+.blog a{
+    color: var(--secondary);
+}
+.home a{
+    color: white;
+}
+.about a{
+    color: white;
+}
+.col img{
+    width: 100%;
+}
+.col h1{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+    color: var(--primary);
+}
+.col p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgb(122, 125, 136);
+    padding-bottom: 3rem;
+}
+.col a{
+    color: white;
+    padding: 0.5rem 1.2rem;
+    background-color: var(--secondary);
+    border-radius: 4px;
+}
+.section-one{
+    text-align: center;
+    
+}
+.section-one h2{
+    font-size: 2rem;
+    color: var(--primary);
+    font-weight: 600;
+    padding-top: 3.5rem;
+    padding-bottom: 2.5rem;
+}
+.col-30 img{
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.col-30 h2{
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--primary);
+    padding-bottom: 1rem;
+}
+.col-30 p{
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: rgb(122, 125, 136);
+    margin-bottom: 2rem;
+}
+.col-30 a{
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--secondary);
+    border-radius: 4px;
+}
+footer{
+    background-color: var(--primary);
+}
+.altc{
+    color: white;
+}
+.fab{
+    color: rgb(122, 125, 136);
+    margin-left: 1rem;
+}
+@media screen and (max-width: 768px) {
+    .col{
+        flex: 0 1 100%;
+    }
+    .col img{
+        margin-bottom: 1rem;
+    }
+    .flex-start{
+        flex-wrap: wrap-reverse;
+    }
+    .nav{
+        width: 100%;
+
+    }
+    .logo{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .header{
+        flex-wrap: wrap;
+    }
+    
+    .flex-center{
+        justify-content: center;
+        align-items: center;
+    }
+    .col-30 img {
+        width: 100%;
+    }
+    
+    .col-30{
+        flex-wrap: wrap;
+    }
+    .col-30{
+        flex: 0 1 100%;
+        margin-bottom: 2rem;
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
+    .altc{
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+    .icons{
+        width: 100%;
+    }
+    .footer-center{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
