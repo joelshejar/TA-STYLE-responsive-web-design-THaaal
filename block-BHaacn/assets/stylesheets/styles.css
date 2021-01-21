@@ -1,0 +1,486 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+header{
+    background-color: #4C5DBC;
+}
+.section-one{
+    background-color: #4C5DBC;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+:root {
+    --primary:rgb(34,41,70);
+    --secondary:rgb(248,70,77);
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+}
+.header-logo a{
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+input{
+    display: none;
+}
+label{
+    display: none;
+}
+.navbar a{
+    margin-left: 2rem;
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary);
+    color: white;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 0.2rem;
+}
+.hero{
+    flex: 0 1 50%;
+}
+.hero h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+}
+.hero p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+.hero-img{
+    flex: 0 1 30%;
+}
+.hero-img img{
+    width: 100%;
+    height: 100%;
+}
+.about{
+    flex: 0 1 47%;
+}
+.about-img{
+    flex: 0 1 47%;
+}
+.about h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 3rem;
+    color: var(--primary);
+    font-weight: 700;
+}
+.about p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.5;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+}
+.you-join{
+    text-align: center;
+}
+.you-join h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    color: var(--primary);
+    font-weight: 700;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+}
+.col-30{
+    flex: 0 1 30%;
+    border: 0.16rem dashed red;
+    padding: 0.5rem;
+    
+}
+.col-31{
+    flex: 0 1 30%;
+}
+
+.col-30 h3{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.7rem;
+    color: var(--primary);
+    font-weight: 700;
+    padding-top: 1.5rem;
+}
+.col-30 p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.5;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+}
+.section-three{
+    background-color: rgb(223,236,254);
+}
+.number{
+    position: absolute;
+    top: -0.8rem;
+    color: red;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0 0.7rem;
+    z-index: 2;
+    background-color: rgb(223,236,254);
+}
+.o{
+    position: relative;
+}
+.t{
+    position: relative;
+}
+.th{
+    position: relative;
+}
+.num-article{
+
+}
+.schedule-date{
+    flex: 0 1 2%;
+    padding: 2rem;
+    border: 0.16rem dashed red;
+    border-radius: 50%;
+    background-color: white;
+}
+.schedule{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    color: var(--primary);
+    font-weight: 700;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+}
+.schedule-date h2{
+    color: red;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.first-date{
+    color: white;
+    background-color: red;
+}
+.first-date h2{
+    color: white;
+}
+.schedule-img{
+    flex: 0 1 15%;
+    
+}
+.schedule-article{
+    flex: 0 1 55%;
+}
+.schedule-article h3{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    color: var(--primary);
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+.schedule-article p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.schedule-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+.sche{
+    padding-bottom: 2rem;
+}
+.line{
+    border-left: 0.16rem dashed red;
+    height: 35rem;
+    position: absolute;
+    top: 10rem;
+    left: 6.5rem;
+    z-index: -1;
+}
+.schedule-section{
+    position: relative;
+}
+.schedule-btn{
+    text-align: center;
+}
+.speakers{
+    flex: 0 1 22%;
+    text-align: center;
+    border-radius: 0.3rem;
+}
+.speakers img{
+    padding-top: 1rem;
+}
+.speakers h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    color: var(--primary);
+    font-weight: 700;
+    padding: 1rem 0;
+}
+.speakers p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.5;
+    padding-bottom: 1rem;
+}
+.topic{
+    background-color: red;
+}
+.topic h2{
+    color: white;
+}
+.topic p{
+    color: white;
+}
+.speakers-section{
+    background-color: rgb(223,236,254);
+}
+.banner-img img{
+    width: 100%;
+    border-radius: 0.6rem;
+    margin: 1.4rem 0;
+}
+.news-img img{
+    width: 100%;
+    
+}
+.news-article h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    color: var(--primary);
+    font-weight: 700;
+    padding: 1rem 0;
+}
+.news-article p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 300;   
+    line-height: 1.5;
+    padding-bottom: 1rem;
+}
+.news-article a{
+    font-family: 'Nunito', sans-serif;
+    color: var(--primary);
+    font-weight: 700;   
+}
+.latest-news{
+    text-align: center;
+}
+.latest-news h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    color: var(--primary);
+    font-weight: 700;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+}
+.red a{
+    color: red;
+}
+.footer-one{
+    background-color: rgb(37,58,123);
+}
+.col-31 h5{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+    padding: 1rem 0;
+}
+.services a{
+    text-decoration: none;
+    color: gray;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.8rem;
+    padding-right: 0.5rem;
+}
+
+.footer-two{
+    background-color: rgb(21,48,105);
+    text-align: center;
+    
+}
+small{
+    color: rgb(172, 169, 169);
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 768px){
+    
+    .hero{
+        flex: 0 1 100%;
+    }
+    .hero-img{
+        flex: 0 1 100%;
+        margin-bottom: 3rem;
+    }
+    
+    .about-img{
+        flex: 0 1 100%;
+        margin-bottom: 2rem;
+    }
+    .about{
+        flex: 0 1 100%;
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
+    .section-one{
+        flex-wrap: wrap-reverse;
+    }
+    .col-30{
+        flex: 0 1 100%;
+        margin-bottom: 2rem;
+    }
+    .line{
+        height: 0;
+    }
+    .schedule-article{
+        flex: 0 1 100%;
+        margin-top: 2rem;
+        
+    }
+    .schedule-img{
+        flex:  0 1 40%;
+    }
+    .news-img{
+        flex: 0 1 100%;
+    }
+    .news-article{
+        flex: 0 1 100%;
+        margin-bottom: 2rem;
+    }
+    .wrap{
+        
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col-31{
+        flex:  0 1 100%;
+    }
+    
+    .services a{
+        font-size: 1.1rem;
+    }
+    .column{
+        flex-direction: column;
+    }
+    .nav{
+        display: none;
+    }
+    
+    #toggle:checked~ .nav{
+        display: inline-block;
+    }
+    .bars{
+        font-size: 24px;
+        color: white;
+        position: fixed;
+        right: 2rem;
+        top: 1rem;
+        z-index: 99;
+    }
+    .nav li{
+        margin-left: 0;
+        margin: 20px 0;
+    }
+    .header-logo{
+        position: fixed;
+        left: 2rem;
+        top: 1rem;
+        z-index: 99;
+    }
+    label{
+        display: inline-block;
+    }
+    .nav{
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color:rgba(34,41,70,0.9);
+        padding-top: 100px;
+        z-index: 98;
+    }
+}
+
+
+
+
+
+
